@@ -19,16 +19,17 @@ def grabScreen():
 def play():
     pg.click(battle[0], battle[1])
 
+time.sleep(2)
 while True:
     play()
     time.sleep(7)
     pg.click(ok[0], ok[1])
-    for i in range(80):
+    for i in range(40):
         grabAndPlace(card1[0], card1[1])
         grabAndPlace(card2[0], card2[1])
         grabAndPlace(card3[0], card3[1])
         grabAndPlace(card4[0], card4[1])
-        time.sleep(random.randint(1, 4))
+        time.sleep(random.randint(1, 5))
     time.sleep(10)
     pg.click(ok[0], ok[1])
     time.sleep(7)

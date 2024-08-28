@@ -26,4 +26,4 @@ def run(speed):
     blowRandom(speed)
 
 while True:
-    run(1)
+    run(.5)
